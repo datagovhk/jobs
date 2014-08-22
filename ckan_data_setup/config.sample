@@ -1,0 +1,13 @@
+API_KEY_EN=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+API_KEY_TC=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+API_KEY_SC=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+
+export API_KEY_EN
+export API_KEY_TC
+export API_KEY_SC
+
+PROVIDER_IMAGE_URL=http://xxxx.xxxx/provider-images
+CATEGORY_IMAGE_URL=http://xxxx.xxxx/category-images
+
+export PROVIDER_IMAGE_URL
+export CATEGORY_IMAGE_URL

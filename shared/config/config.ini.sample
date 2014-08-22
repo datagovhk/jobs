@@ -1,0 +1,36 @@
+[ProviderUrl]
+hk-org-rehabsociety = http://xxxx.xxxx/hk-org-rehabsociety/psi-data.json
+hksarg-archsd       = http://xxxx.xxxx/hksarg-archsd/psi-data.json
+hksarg-bd           = http://xxxx.xxxx/hksarg-bd/psi-data.json
+hksarg-censtatd     = http://xxxx.xxxx/hksarg-censtatd/psi-data.json
+hksarg-epd          = http://xxxx.xxxx/hksarg-epd/psi-data.json
+hksarg-fehd         = http://xxxx.xxxx/hksarg-fehd/psi-data.json
+hksarg-hko          = http://xxxx.xxxx/hksarg-hko/psi-data.json
+hksarg-hkpf         = http://xxxx.xxxx/hksarg-hkpf/psi-data.json
+hksarg-landsd       = http://xxxx.xxxx/hksarg-landsd/psi-data.json
+hksarg-md           = http://xxxx.xxxx/hksarg-md/psi-data.json
+hksarg-ogcio        = http://xxxx.xxxx/hksarg-ogcio/psi-data.json
+hksarg-rvd          = http://xxxx.xxxx/hksarg-rvd/psi-data.json
+hksarg-td           = http://xxxx.xxxx/hksarg-td/psi-data.json
+hksarg-various      = http://xxxx.xxxx/hksarg-various/psi-data.json
+
+[ProviderName]
+hk-org-rehabsociety = The Hong Kong Society for Rehabilitation
+hksarg-archsd       = Architectural Services Department
+hksarg-bd           = Buildings Department
+hksarg-censtatd     = Census and Statistics Department
+hksarg-epd          = Environmental Protection Department
+hksarg-fehd         = Food and Environmental Hygiene Department
+hksarg-hko          = Hong Kong Observatory
+hksarg-hkpf         = Hong Kong Police Force
+hksarg-landsd       = Lands Department
+hksarg-md           = Marine Department
+hksarg-ogcio        = Office of the Government Chief Information Officer
+hksarg-rvd          = Rating and Valuation Department
+hksarg-td           = Transport Department
+hksarg-various      = Various Bureaux / Departments
+
+[ApiKey]
+en = xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+tc = xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+sc = xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx

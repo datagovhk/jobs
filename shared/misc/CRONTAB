@@ -1,0 +1,2 @@
+5,15,25,35,45,55 * * * * $HOME/jobs/data_json_check/bin/check.py     >> $HOME/jobs/data_json_check/log/check-$(date '+\%Y\%m\%d').log     2>&1
+0                0 * * * $HOME/jobs/data_json_harvest/bin/harvest.py >> $HOME/jobs/data_json_harvest/log/harvest-$(date '+\%Y\%m\%d').log 2>&1

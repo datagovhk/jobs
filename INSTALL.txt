@@ -1,0 +1,7 @@
+Directory:
+$HOME
+    /jobs
+        /ckan_data_setup
+        /data_json_check
+        /data_json_harvest
+    /shared
