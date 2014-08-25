@@ -30,6 +30,22 @@ hksarg-rvd          = Rating and Valuation Department
 hksarg-td           = Transport Department
 hksarg-various      = Various Bureaux / Departments
 
+[ProviderContact]
+hk-org-rehabsociety = xxxx@xxxx.xxx
+hksarg-archsd       = xxxx@xxxx.xxx
+hksarg-bd           = xxxx@xxxx.xxx
+hksarg-censtatd     = xxxx@xxxx.xxx
+hksarg-epd          = xxxx@xxxx.xxx
+hksarg-fehd         = xxxx@xxxx.xxx
+hksarg-hko          = xxxx@xxxx.xxx
+hksarg-hkpf         = xxxx@xxxx.xxx
+hksarg-landsd       = xxxx@xxxx.xxx
+hksarg-md           = xxxx@xxxx.xxx
+hksarg-ogcio        = xxxx@xxxx.xxx
+hksarg-rvd          = xxxx@xxxx.xxx
+hksarg-td           = xxxx@xxxx.xxx
+hksarg-various      = xxxx@xxxx.xxx
+
 [ApiKey]
 en = xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 tc = xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
