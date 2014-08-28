@@ -22,6 +22,12 @@
         "weather-data"
       ]
     },
+    "licenceCode": {
+      "type": "string",
+      "enum": [
+        "Data.One"
+      ]
+    },
     "codeText": {
       "type": "string",
       "minLength": 1,
@@ -41,6 +47,11 @@
       "type": "string",
       "format": "email",
       "maxLength": 254
+    },
+    "phoneNumber": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
     },
     "webLink": {
       "type": "string",
@@ -129,14 +140,17 @@
       },
       "identifier": {
         "type": "string",
-        "minLength": 1,
+        "minLength": 2,
         "maxLength": 70
       },
-      "license": {
-        "$ref": "#/definitions/codeText"
+      "licence": {
+        "$ref": "#/definitions/licenceCode"
       },
       "mbox": {
         "$ref": "#/definitions/emailAddress"
+      },
+      "phone": {
+        "$ref": "#/definitions/phoneNumber"
       },
       "references": {
         "type": "array",
@@ -201,8 +215,11 @@
           "additionalProperties": false
         }
       },
-      "source": {
-        "$ref": "#/definitions/webLinkMultilingual"
+      "sources": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/webLinkMultilingual"
+        }
       },
       "title": {
         "$ref": "#/definitions/shortTextMultilingual"
@@ -212,7 +229,6 @@
       }
     },
     "required": [
-      "contactPoint",
       "description",
       "group",
       "identifier",
