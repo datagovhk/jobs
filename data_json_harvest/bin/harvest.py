@@ -92,14 +92,19 @@ def modify_dataset(provider_id, dataset_id, dataset):
             for reference in dataset['references']:
                 references.append(reference[mapped_lang])
             extras.append({'key': 'references', 'value': '\n'.join(references)})
+        if 'sources' in dataset:
+            sources = []
+            for source in dataset['sources']:
+                sources.append(source[mapped_lang])
+            extras.append({'key': 'sources', 'value': '\n'.join(sources)})
         ckan[lang].action.package_update(id=dataset_id,
                                          title=dataset['title'][mapped_lang],
-                                         maintainer=dataset['contactPoint'][mapped_lang],
+                                         maintainer=dataset['contactPoint'][mapped_lang] if 'contactPoint' in dataset else None,
                                          maintainer_email=dataset['mbox'],
+                                         maintainer_phone=dataset['phone'] if 'phone' in dataset else None,
                                          notes=dataset['description'][mapped_lang],
                                          groups=[{'name': dataset['group']}],
                                          owner_org=provider_id,
-                                         url=dataset['source'][mapped_lang] if 'source' in dataset else None,
                                          extras=extras)
     refresh_resources(dataset_id, dataset['resources'])
 
@@ -124,14 +129,19 @@ def add_dataset(provider_id, dataset_id, dataset):
             for reference in dataset['references']:
                 references.append(reference[mapped_lang])
             extras.append({'key': 'references', 'value': '\n'.join(references)})
+        if 'sources' in dataset:
+            sources = []
+            for source in dataset['sources']:
+                sources.append(source[mapped_lang])
+            extras.append({'key': 'sources', 'value': '\n'.join(sources)})
         ckan[lang].action.package_create(name=dataset_id,
                                          title=dataset['title'][mapped_lang],
-                                         maintainer=dataset['contactPoint'][mapped_lang],
+                                         maintainer=dataset['contactPoint'][mapped_lang] if 'contactPoint' in dataset else None,
                                          maintainer_email=dataset['mbox'],
+                                         maintainer_phone=dataset['phone'] if 'phone' in dataset else None,
                                          notes=dataset['description'][mapped_lang],
                                          groups=[{'name': dataset['group']}],
                                          owner_org=provider_id,
-                                         url=dataset['source'][mapped_lang] if 'source' in dataset else None,
                                          extras=extras)
     add_resources(dataset_id, dataset['resources'])
 
