@@ -87,6 +87,8 @@ def modify_dataset(provider_id, dataset_id, dataset):
         extras = [{'key': 'update_frequency', 'value': dataset['updateFrequency'][mapped_lang]}]
         if 'dataDictionary' in dataset:
             extras.append({'key': 'data_dictionary', 'value': dataset['dataDictionary'][mapped_lang]})
+        if 'phone' in dataset:
+            extras.append({'key': 'maintainer_phone', 'value': dataset['phone']})
         if 'references' in dataset:
             references = []
             for reference in dataset['references']:
@@ -101,7 +103,6 @@ def modify_dataset(provider_id, dataset_id, dataset):
                                          title=dataset['title'][mapped_lang],
                                          maintainer=dataset['contactPoint'][mapped_lang] if 'contactPoint' in dataset else None,
                                          maintainer_email=dataset['mbox'],
-                                         maintainer_phone=dataset['phone'] if 'phone' in dataset else None,
                                          notes=dataset['description'][mapped_lang],
                                          groups=[{'name': dataset['group']}],
                                          owner_org=provider_id,
@@ -124,6 +125,8 @@ def add_dataset(provider_id, dataset_id, dataset):
         extras = [{'key': 'update_frequency', 'value': dataset['updateFrequency'][mapped_lang]}]
         if 'dataDictionary' in dataset:
             extras.append({'key': 'data_dictionary', 'value': dataset['dataDictionary'][mapped_lang]})
+        if 'phone' in dataset:
+            extras.append({'key': 'maintainer_phone', 'value': dataset['phone']})
         if 'references' in dataset:
             references = []
             for reference in dataset['references']:
@@ -138,7 +141,6 @@ def add_dataset(provider_id, dataset_id, dataset):
                                          title=dataset['title'][mapped_lang],
                                          maintainer=dataset['contactPoint'][mapped_lang] if 'contactPoint' in dataset else None,
                                          maintainer_email=dataset['mbox'],
-                                         maintainer_phone=dataset['phone'] if 'phone' in dataset else None,
                                          notes=dataset['description'][mapped_lang],
                                          groups=[{'name': dataset['group']}],
                                          owner_org=provider_id,
